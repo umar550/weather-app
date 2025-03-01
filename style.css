@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dangrek&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Zain", sans-serif;
+}
+
+:root {
+    --main-color: rgb(33, 70, 70);
+    --footer-color: rgb(17, 54, 56);
+}
+
+.container {
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0px;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.content {
+    width: 65%;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    color: var(--main-color);
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 30px;
+    left: 50px;
+}
+
+.logo-text {
+    position: fixed;
+    top: 35px;
+    left: 90px;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+
+h1 {
+    display: block;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 50px;
+    margin: 20px 0 20px 0;
+    text-transform: capitalize;
+}
+
+.input {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px 5px 20px 0;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 0.7em;
+    opacity: 0.5;
+    display: block;
+}
+
+button {
+    border: 1px solid rgb(22, 49, 49);
+    width: 120px;
+    height: 40.5px;
+    border-radius: 5px;
+    margin: 20px 0 20px 5px;
+    text-transform: capitalize;
+    transition-duration: 0.5s;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(22, 49, 49);
+}
+
+button:hover {
+    background-color: rgb(22, 49, 49);
+    color: skyblue;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.pic {
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 170px;
+    left: -70px;
+    z-index: -1;
+}
+
+footer {
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    width: 100%;
+    height: 120px;
+}
+
+.footer-content {
+    margin-top: 30px;
+}
+
+#copyright {
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 1.3em;
+    color: var(--footer-color);
+}
+
+.fa-brands {
+    transition-duration: 0.5s;
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width:600px) {
+
+
+    .container {
+        height: 930px;
+    }
+
+    .content {
+        width: 95%;
+        padding: 20px 0px 20px 0px;
+    }
+
+
+    h1 {
+        display: block;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin: 10px 0 20px 0;
+    }
+
+
+    .input {
+        width: 250px;
+        height: 35px;
+        margin: 10px 0px 20px 0;
+        font-size: 1em;
+    }
+
+
+    button {
+        width: 250px;
+        height: 30px;
+        margin: 10px 0 20px 0px;
+        font-size: 1em;
+    }
+
+
+    h3 {
+        font-weight: 300;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 120px;
+        opacity: 0.4;
+    }
+
+
+    .social-links a {
+        font-size: 1.3em;
+    }
+}
+
+
+/* @media screen and (max-width: 768px) {
+
+    h1 {
+        display: block;
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 30px;
+        margin: 10px 0 10px 0;
+    }
+
+    .container {
+        height: 945px;
+    }
+} */
